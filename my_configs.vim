@@ -66,10 +66,7 @@ set csverb
 endif
 
 nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
-"csg do not work well with amix/vimrc, do not know 
-"which config make csg jump to definition and "run in search mode"
-"just use <Esc> to return to normal 
-nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR><Esc><Esc>
+nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap csc :cs find c <C-R>=expand("<cword>")<CR><CR>
 nmap cst :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>
