@@ -35,11 +35,11 @@ set fileformats=unix
 
 set backspace=indent,eol,start
 
-"windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"windows : already set by amix/vimrc
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 "ctags
 "enter root dir of your project and run ctags -R .
@@ -65,14 +65,17 @@ endif
 set csverb
 endif
 
-nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>    
-nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>    
-nmap csc :cs find c <C-R>=expand("<cword>")<CR><CR>    
-nmap cst :cs find t <C-R>=expand("<cword>")<CR><CR>    
-nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>    
-nmap csf :cs find f <C-R>=expand("<cfile>")<CR><CR>    
-nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
+"csg do not work well with amix/vimrc, do not know 
+"which config make csg jump to definition and "run in search mode"
+"just use <Esc> to return to normal 
+nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR><Esc><Esc>
+nmap csc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap cst :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap csf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap csd :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 
 
 "taglist
@@ -81,6 +84,8 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_SHow_Menu=1
 let Tlist_File_Fold_Auto_Close=1
+
+nmap <leader>nt :TlistToggle <CR>
 
 "nerdtree
 "autocmd vimenter * NERDTree
