@@ -67,6 +67,11 @@ endif
 
 nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>
+"
+"find definition and open in a vertically splited window
+":vsp | cs find g <name>
+"
+
 nmap csc :cs find c <C-R>=expand("<cword>")<CR><CR>
 nmap cst :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap cse :cs find e <C-R>=expand("<cword>")<CR><CR>
@@ -76,6 +81,7 @@ nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 
 nmap <leader>cse :cs find e <C-R>=expand("<cword>")<CR>
 nmap <leader>csg :cs find g <C-R>=expand("<cword>")<CR>
+nmap <leader>css :cs find s <C-R>=expand("<cword>")<CR>
 
 "taglist
 "1. copy unzipped file to .vim, 2. cd .vim/doc  3. vim  4. :helptags .
