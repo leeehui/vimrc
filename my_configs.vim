@@ -68,7 +68,7 @@ endif
 nmap css :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap csg :cs find g <C-R>=expand("<cword>")<CR><CR>
 "
-"find definition and open in a vertically splited window
+"find definition and open in a vertically split window
 ":vsp | cs find g <name>
 "
 
