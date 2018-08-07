@@ -74,7 +74,8 @@ nmap csf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap csd :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap csi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 
-nmap <leader>m :cs find e <C-R>=expand("<cword>")<CR>
+nmap <leader>cse :cs find e <C-R>=expand("<cword>")<CR>
+nmap <leader>csg :cs find g <C-R>=expand("<cword>")<CR>
 
 "taglist
 "1. copy unzipped file to .vim, 2. cd .vim/doc  3. vim  4. :helptags .
