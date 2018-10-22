@@ -92,6 +92,14 @@ let Tlist_File_Fold_Auto_Close=1
 
 nmap <leader>nt :TlistToggle <CR>
 
+"ycm
+let g:ycm_error_symbol = '>>'
+let g:ycm_warning_symbol = '>*'
+nmap <leader>jl :YcmCompleter GoToDeclaration<CR>
+nmap <leader>jf :YcmCompleter GoToDefinition<CR>
+nmap <leader>jg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <F4> :YcmDiags<CR>
+
 "nerdtree
 "autocmd vimenter * NERDTree
 
