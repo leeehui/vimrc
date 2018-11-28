@@ -97,6 +97,9 @@ nmap <leader>nt :TlistToggle <CR>
 "git clone https://github.com/rdnetto/YCM-Generator.git ~/.vim_runtime/bundle
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = '>*'
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 0
+
 nmap <leader>jl :YcmCompleter GoToDeclaration<CR>
 nmap <leader>jf :YcmCompleter GoToDefinition<CR>
 nmap <leader>jg :YcmCompleter GoToDefinitionElseDeclaration<CR>
