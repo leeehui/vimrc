@@ -6,8 +6,7 @@ set showcmd
 set showmode
 set ruler
 set cursorline
-set fdm=marker
-
+set fdm=marker 
 "common
 set nocompatible
 
@@ -103,8 +102,15 @@ let g:ycm_autoclose_preview_window_after_completion = 0
 nmap <leader>jl :YcmCompleter GoToDeclaration<CR>
 nmap <leader>jf :YcmCompleter GoToDefinition<CR>
 nmap <leader>jg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <leader>m :YcmCompleter FixIt<CR>
 nmap <F4> :YcmDiags<CR>
 
+"github.com/octol/vim-cpp-enhanced-highlight.git
+"//let g:cpp_class_scope_highlight=1
+"//let g:cpp_class_decl_highlight=1
+"//let g:cpp_member_variable_highlight=1
+"//let g:cpp_experimental_template_highlight=1
+"//let g:cpp_concepts_highlight=1
 
 "nerdtree
 let NERDTreeShowHidden=1
