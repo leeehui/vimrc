@@ -11,7 +11,7 @@ set fdm=marker
 set nocompatible
 
 "bundle
-"syntax on
+syntax on
 
 set nu
 set nowrap
@@ -94,6 +94,7 @@ nmap <leader>nt :TlistToggle <CR>
 "ycm
 "git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/bundle
 "git clone https://github.com/rdnetto/YCM-Generator.git ~/.vim_runtime/bundle
+let g:loaded_youcompleteme = 1
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = '>*'
 let g:ycm_autoclose_preview_window_after_insertion = 1
