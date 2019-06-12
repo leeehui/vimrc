@@ -116,4 +116,11 @@ nmap <F4> :YcmDiags<CR>
 "nerdtree
 let NERDTreeShowHidden=1
 
+" Useful mappings for managing tabs
+map <leader>tt :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tn :tabmove<cr>
+map <leader>tp :tabnext<cr> 
+
 
